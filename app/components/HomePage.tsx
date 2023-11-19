@@ -3,7 +3,8 @@ import { FormEvent, useState } from "react"
 
 const HomePage = () => {
     const [language, setLanguage] = useState('');
-    const handelSearch = () => {
+    const handelSearch = async () => {
+        await setLanguage(language.trim());
         if (language !== '')
             window.location.href = `/jobs/${language}`;
     }
