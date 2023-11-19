@@ -32,14 +32,14 @@ const page = async ({ params }: { params: { slug: string } }) => {
                 <div className="py-5 h-screen overflow-y-auto" style={{ background: 'url(https://picsum.photos/1740/1160)'}}>
                     <div className="container mx-auto">
                         <div className="overflow-x-auto">
-                            <table style={{ background: 'rgba(0, 0, 0, .9)' }} className="table glas text-white">
+                            <table style={{ background: 'rgba(0, 0, 0, .6)' }} className="table glas text-white">
                                 {/* head */}
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Job</th>
-                                        <th>Posted Date</th>
-                                        <th>Details</th>
+                                        <th className="text-white">Name</th>
+                                        <th className="text-white">Job</th>
+                                        <th className="text-white">Posted Date</th>
+                                        <th className="text-white">Details</th>
                                     </tr>
                                 </thead>
                                 <tbody>
