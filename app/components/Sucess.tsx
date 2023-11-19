@@ -28,7 +28,7 @@ const Sucess = () => {
                 <div className="glass p-10 rounded-lg h-full">
                     <h1 className="text text-4xl text-indigo-800 font-bold">&#128519; Application Submitted Successfully!</h1>
                     <div className="py-5">
-                        <p className="text-white">Thank you, {userName}, for applying for the position of {userJob}</p>
+                        <p className="text-indigo-600">Thank you, {userName}, for applying for the position of {userJob}</p>
                         <ul className="menu glass shadow-2xl mx-auto rounded-box my-5 bg-indigo-600">
                             <li>
                                 <h2 className="menu-title text-white">Your Application Details:</h2>
@@ -42,7 +42,7 @@ const Sucess = () => {
                                 </ul>
                             </li>
                         </ul>
-                        <p className="text-white">We will review your application and contact you shortly. Good luck!</p>
+                        <p className="text-indigo-600">We will review your application and contact you shortly. Good luck!</p>
                     </div>
                 </div>
             </div>
