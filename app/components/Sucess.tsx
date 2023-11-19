@@ -26,7 +26,7 @@ const Sucess = () => {
         <div className="py-5 h-screen shadow-lg overflow-y-auto" style={{ background: 'url(https://picsum.photos/1740/1160)' }}>
             <div className="container mx-auto h-full">
                 <div className="glass p-10 rounded-lg h-full">
-                    <h1 className="text text-4xl text-green-600 font-bold">&#128519; Application Submitted Successfully!</h1>
+                    <h1 className="text text-4xl text-indigo-800 font-bold">&#128519; Application Submitted Successfully!</h1>
                     <div className="py-5">
                         <p className="text-white">Thank you, {userName}, for applying for the position of {userJob}</p>
                         <ul className="menu glass shadow-2xl mx-auto rounded-box my-5 bg-indigo-600">

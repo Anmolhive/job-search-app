@@ -15,7 +15,7 @@ const HomePage = () => {
                     <p className="mb-5">Ready to level up your career? Enter your preferred programming language below and discover exciting developer opportunities that match your skills.</p>
                     <div className="flex gap-5">
                         <input value={language} onChange={event => setLanguage(event.target.value)} className="input input-bordered join-item text-slate-950 w-full" placeholder="E.g., JavaScript, Python, Java.." />
-                        <button onClick={handelSearch} className="btn btn-primary glass bg-neutral-900">Find Jobs</button>
+                        <button onClick={handelSearch} className="btn glass bg-indigo-700">Find Jobs</button>
                     </div>
                 </div>
             </div>
