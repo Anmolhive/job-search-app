@@ -14,7 +14,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
     console.log(language);
     async function fetchData() {
         try {
-            const response = await fetch(`api/getjobs?language=${language}`);
+            const response = await fetch(`https://job-search-app-amber.vercel.app/api/getjobs?language=${language}`);
             if (response.ok) {
                 const data = await response.json();
                 return data;

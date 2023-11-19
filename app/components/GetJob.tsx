@@ -18,7 +18,7 @@ type Prop = {
     id: string;
 }
 const GetJob = async ({ language, id }: Prop) => {
-    const response = await fetch(`http://localhost:3000/api/getjobs?language=${language}&id=${id}`, { cache: 'force-cache' });
+    const response = await fetch(`https://job-search-app-amber.vercel.app/api/getjobs?language=${language}&id=${id}`, { cache: 'force-cache' });
     const result = await response.json();
     const job: Job = result.result[0];
 
