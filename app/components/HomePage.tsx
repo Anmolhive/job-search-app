@@ -7,8 +7,9 @@ const HomePage = () => {
         window.location.href = `/jobs/${language}`;
     }
 
-    const handelKeyPress = (event: KeyboardEvent) => {
+    const handelKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
+            event.preventDefault();
             handelSearch();
         }
     }

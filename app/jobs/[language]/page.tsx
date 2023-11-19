@@ -11,7 +11,6 @@ const page = async ({ params }: { params: { slug: string } }) => {
         date_posted: string;
     }
     const language = decodeURIComponent(Object.values(params)[0]);
-    console.log(language);
     async function fetchData() {
         try {
             const response = await fetch(`https://job-search-app-amber.vercel.app/api/getjobs?language=${language}`);
