@@ -53,17 +53,21 @@ const ApplyFprm = () => {
         }
     };
 
+    const [loading, setLoading] = useState(false);
+
     const handelSubmit = async (event: FormEvent<HTMLButtonElement>) => {
         event.preventDefault();
         if (userName !== '' || userEmail !== '' || userResume !== null) {
             const heading = document.querySelector('h1');
             if (heading) {
+                setLoading(true);
                 const userJob: string = heading?.innerText;
                 await dispatch(setName(userName));
                 await dispatch(setEmail(userEmail));
                 await dispatch(setJob(userJob));
                 await dispatch(setCoverLatter(userCoverLatter))
                 await dispatch(setResume(fileUrl));
+                setLoading(false);
                 router.push('/sucess');
             }
         }
@@ -100,7 +104,9 @@ const ApplyFprm = () => {
                                 <input onChange={handleFileChange} type="file" className="file-input file-input-bordered w-full" accept=".pdf" />
                             </div>
                             <div className="form-control mt-6">
-                                <button onClick={handelSubmit} className="btn btn-primary">Submit</button>
+                                <button onClick={handelSubmit} className="btn btn-primary" disabled={loading ? true : false} >
+                                    {loading ? <span className="loading loading-spinner"></span> : 'Submit'}
+                                </button>
                             </div>
                         </form>
                     </div>
