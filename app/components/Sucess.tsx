@@ -42,6 +42,7 @@ const Sucess = () => {
                                 </ul>
                             </li>
                         </ul>
+                        
                         <p className="text-indigo-600">We will review your application and contact you shortly. Good luck!</p>
                     </div>
                 </div>
