@@ -14,7 +14,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
     console.log(language);
     async function fetchData() {
         try {
-            const response = await fetch(`/api/getjobs?language=${language}`, { cache: 'no-cache' });
+            const response = await fetch(`api/getjobs?language=${language}`);
             if (response.ok) {
                 const data = await response.json();
                 return data;
