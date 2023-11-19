@@ -9,7 +9,7 @@ const ViewJob = ({ language, id }: Prop) => {
     return (
         <div className="py-5 h-screen shadow-lg overflow-y-auto" style={{ background: 'url(https://picsum.photos/1740/1160)' }}>
             <div className="container mx-auto relative">
-                <div className="glass p-5 rounded-lg">
+                <div className="glass p-5 rounded-lg" style={{background: 'rgba(0,0,0, .6)'}}>
                     {language && id && <GetJob language={language} id={id} />}
                     <ApplyFprm />
                 </div>

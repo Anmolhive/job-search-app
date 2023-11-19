@@ -19,7 +19,7 @@ const Sucess = () => {
         setUserEmail(email);
         setUserCoverLatter(coverLetter);
         setUserResume(resume);
-    },[job, email, coverLetter, resume])
+    },[job, name, email, coverLetter, resume])
 
 
     return (

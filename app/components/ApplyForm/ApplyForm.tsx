@@ -95,7 +95,7 @@ const ApplyFprm = () => {
                                 <input value={userEmail} onChange={handelEmailChange} type="email" placeholder="Email" className="input bg-neutral-600 text-white placeholder:text-white" />
                             </div>
                             <div className="form-control">
-                                <textarea value={userCoverLatter} onChange={handelCoverChange} placeholder="Cover latter" className="textarea textarea-bordered textarea-lg w-full bg-neutral-600 text-white placeholder:text-white" ></textarea>
+                                <textarea value={userCoverLatter} onChange={handelCoverChange} placeholder="Cover letter" className="textarea textarea-bordered textarea-lg w-full bg-neutral-600 text-white placeholder:text-white" ></textarea>
                             </div>
                             <div className="form-control">
                                 <label className="label">
